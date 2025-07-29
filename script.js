@@ -182,6 +182,6 @@ let options = {
 
 let {width = 100, height, title} = options;
 
-console.log(title);  // Menu
-console.log(width);  // 100
-console.log(height); // 200
+console.log(title);  //   Menu added
+console.log(width);  //   100
+console.log(height); //   200
