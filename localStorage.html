@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <section>
+        <form action="">
+            <input type="text" id="name" placeholder="Enter name">
+            <button type="submit" id="save"> Save</button>
+        </form>
+    </section>
+
+    <section id="locData">
+
+    </section>
+    <section id="sessionData">
+
+    </section>
+
+<script>
+ let nameInput = document.getElementById('name');
+ let saveButton = document.getElementById('save');
+
+saveButton.addEventListener("click",function(e){
+  e.preventDefault();
+  const value = nameInput.value;
+  localStorage.setItem("user",value)
+  sessionStorage.setItem("user",value)
+   document.getElementById('locData').textContent = savedData;
+  
+//console.log(nameInput.value);
+
+})
+
+window.onload = function(){
+    const savedData = localStorage.getItem("user");
+     const savedData2 = sessionStorage.getItem("user");
+    if(savedData) {
+        document.getElementById('locData').textContent = savedData;
+    }
+     if(savedData2) {
+        document.getElementById('sessionData').textContent = savedData2;
+    }
+}
+</script>
+</body>
+</html>

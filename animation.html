@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+<style>
+    .important{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: blue;
+    }
+</style>
+
+
+</head>
+<body>
+<div id="animate1" style="position:relative; background-color: rgb(51, 50, 50); color: white; width: 250px; height: 150px;"> 
+ <h4 id="text">Jquery</h4>      
+</div>
+<button id="btn1"> Animate</button>  
+
+<br>
+
+<div>
+    <span>sfyewifhdln</span>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('#btn1').click(function(){
+
+            $('#animate1').animate( {left : '250px'}, 300);
+             $('#text').animate({fontSize : '28px', textAlign : 'center'},1000);
+        });
+
+        $('span').addClass("important");
+    });
+</script>
+</body>
+</html>

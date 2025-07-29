@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+      
+</head>
+<body>
+    <div id="para" style="display: none;height: 100px; width: 100%; background-color: blueviolet;">This is a hidden paragraph</div>
+    <div id="para1" style="display: none;height: 100px; width: 100%; background-color: blueviolet;">This is a hidden paragraph</div>
+    <div id="para2" style="height: 100px; width: 100%; background-color: blueviolet;">This is a hidden paragraph</div>
+
+    <button id="btn">Show</button>
+
+<script>
+  $(document).ready(function(){
+    $("#btn").click(function(){
+      $("#para").slideDown(3000);
+    });
+  });
+
+  $(document).ready(function(){
+    $("#btn").click(function(){
+      $("#para2").slideUp(3000);
+    });
+  });
+
+  $(document).ready(function(){
+    $("#btn").click(function(){
+      $("#para1").slideToggle(3000);
+    });
+  });
+//   $("#fadeBtn").click(function () {
+//     $("#box").fadeIn(1000); 
+//   });
+//    $("#fadeBtn").click(function () {
+//     $("#box1").fadeOut(6000); 
+    
+//   });
+
+//    $("#fadeBtn").click(function () {
+//     $("#box2").slideDown(6000); 
+    
+//   });
+
+//    $("#fadeBtn").click(function () {
+//     $("#text").fadeTo(1000,0.3); 
+    
+//   });
+</script>
+</body>
+</html>

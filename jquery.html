@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>jquery</title>
+</head>
+<body>
+ <!-- <p id="q1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem laboriosam corporis praesentium! Veritatis officiis mollitia voluptates assumenda, deserunt ipsam aspernatur eius vero nobis velit cumque doloribus autem, dolore quidem est?</p>
+<button id="btn1">Hide</button> -->
+
+<!-- <section id="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <h4>Q: What is your return policy?</h4>
+    <p>A: Returns are accepted within 30 days with original packaging.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>Q: Do you ship internationally?</h4>
+    <p>A: Yes, we ship worldwide. Charges vary by location.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>Q: How can I contact support?</h4>
+    <p>A: Email us at support@example.com or call 123-456-7890.</p>
+  </div>
+</section>
+<button id="btn2">Hide/Show</button> -->
+
+<div id="ready">
+<p id="text">
+  This is a short preview of the paragraph.</p>
+  <p id="more" style="display: none;">
+    Here is the rest of the content that is shown when you click "Read More".
+  </p>
+
+</div>
+<button id="btn3">Read More</button> 
+<br>
+
+ <div id="loginbox" style="background-color: burlywood;">
+    <h2 style="color: blue;">Login</h2>
+    <form id="login-form">
+      <input type="text" placeholder="Username" >
+      <br>
+      <input type="password" placeholder="Password">
+      <br>
+    </form>
+    <button id="btn4">Login</button>
+  </div>
+<div id="successMsg" style="display: none;">Success! Form submitted.</div>
+
+<!--
+<nav class="menu">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <div id="htmlCnt">
+
+    <p> vdhsgfgsdjkfhl gfegfehleht.</p>
+
+  </div>-->
+
+ <script>
+    $(document).ready(function(){
+//     $("#btn1").click(function(){
+//         $("#q1").hide(1000);
+//     });
+    
+    //  $("#btn2").click(function(){
+    //     $("#faq").slideToggle(1000);
+    // });
+   
+    //  $("#btn3").click(function(){
+    //     $("#more").slideDown(1000);
+    // });
+
+    $("#btn4").click(function(){
+        $("#successMsg").fadeIn(1000); 
+        $("#successMsg").fadeOut(3000);
+    });
+
+    let content  = $('#htmlCnt').html();
+    // alert(content);
+
+   $('#htmlCnt').html('<ul> <li>dfdfg</li> <li> fgfwdkfk</li> </ul>');
+
+
+   });   
+ </script>   
+</body>
+</html>
